@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav .title {
+  font-size: 1.5rem;
+  color: #000;
+  margin-right: auto;
+}
+
+nav .title span {
+  color: red; /* Color rojo para "DH" */
+}
+
+nav a {
+  color: #000;
+  text-decoration: none; /* Elimina la subrayado */
+  margin: 0 10px; /* Espacio entre los enlaces */
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(136, 136, 136); /* Color al pasar el ratón o al estar enfocado */
+}
+
+nav .change-theme-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  margin-left: 20px; /* Espacio entre el botón y los enlaces */
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-content img {
+  width: 200px;
+  margin: 0;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 10px; /* Espacio entre los íconos */
+}
+
+footer .social-icons img {
+  width: 24px; /* Tamaño de los íconos */
+  height: 24px;
+  cursor: pointer;
+}
+/* Estilos para los iconos en el tema claro */
+.social-icons img {
+  filter: brightness(0) invert(0); /* Color original para el tema claro */
+}
+
+/* Estilos para los iconos en el tema oscuro */
+.dark .social-icons img {
+  filter: brightness(0) invert(1); /* Inversión de colores para el tema oscuro */
+}
+
+footer > img {
+  width: 200px;
+  margin: 0;
+}
+
+footer > p {
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+  position: relative;
+  overflow: hidden;
+  text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+.card-image {
+  width: 100%;
+  height: 150px; /* Ajusta la altura según sea necesario */
+  object-fit: cover; /* Ajusta la imagen para cubrir el cuadro sin distorsión */
+}
+
+.card-content {
+  flex: 1; /* Permite que el contenido ocupe el espacio disponible */
+  margin-bottom: 2rem; /* Espacio entre el contenido y el botón de favorito */
+}
+
+.favButton {
+  background-color: transparent;
+  border: none;
+  width: 24px; /* Ajusta el tamaño según sea necesario */
+  height: 24px; /* Ajusta el tamaño según sea necesario */
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.favButton img {
+  width: 100%;
+  height: 100%;
+}
+
+.card h3, .card p {
+  margin: 0;
+}
+
+.card h3 {
+  font-size: 1.2rem; /* Ajusta el tamaño del texto según sea necesario */
+  margin-bottom: 0.5rem; /* Espacio entre el nombre y el botón de favorito */
+}
+
+.card p {
+  font-size: 1rem; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 90vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark {
+  background-color: #12121296;
+  color: white;
+}
+
+.dark > a {
+  color: white;
+}
